@@ -1,0 +1,12 @@
+{
+  "name": "Build with Leaser",
+  "short_name": "Leaser",
+  "description": "Decision Intelligence infrastructure for multifamily occupancy and revenue.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f8f5",
+  "theme_color": "#08b8ad",
+  "icons": [
+    { "src": "assets/leaser-vertical-logo.png", "sizes": "1254x1254", "type": "image/png" }
+  ]
+}
