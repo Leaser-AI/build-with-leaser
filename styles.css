@@ -297,13 +297,17 @@ h3 { font-size: clamp(26px, 3vw, 42px); }
   margin-top: 40px;
 }
 .article-meta span,
-.article-meta time {
+.article-meta time,
+.article-meta > a {
   border: 1px solid var(--ink);
   border-radius: 999px;
   padding: 7px 11px;
   font-size: 12px;
   font-weight: 650;
 }
+.article-meta > a { text-decoration: none; }
+.article-meta > a:hover { background: var(--teal); }
+.article-meta > a span { border: 0; padding: 0; }
 .article-back {
   display: inline-block;
   margin-bottom: 18px;
