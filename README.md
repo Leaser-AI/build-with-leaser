@@ -1,4 +1,4 @@
-# Build with Leaser
+# Build with Leaser AI
 
 The public technology and ecosystem site for `build.leaserai.com`.
 
