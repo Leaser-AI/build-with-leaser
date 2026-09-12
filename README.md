@@ -2,6 +2,12 @@
 
 The public technology and ecosystem site for `build.leaserai.com`.
 
+## Publishing insights
+
+The homepage is the editorial index. Each published field note lives at a stable
+path under `insights/<slug>/`; add its canonical URL to `sitemap.xml` when it
+goes live. Forthcoming topics on the homepage are intentionally not linked.
+
 ## Preview locally
 
 ```bash
