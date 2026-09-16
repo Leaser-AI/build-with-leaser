@@ -447,12 +447,15 @@ h3 { font-size: clamp(26px, 3vw, 42px); }
 .orbit-core span { font-family: var(--display); font-size: 92px; font-weight: 800; line-height: 1; }
 .orbit-pulse {
   position: absolute;
-  top: calc(50% - 140px); left: calc(50% + min(25vw, 315px));
+  top: 0; left: 0;
   width: 18px; height: 18px;
   border-radius: 50%;
   background: var(--white);
   box-shadow: 0 0 0 10px rgba(8,184,173,.3), 0 0 45px var(--teal);
-  animation: orbit 7s linear infinite;
+  offset-path: ellipse(50% 50% at 50% 50%);
+  offset-distance: 0%;
+  offset-rotate: 0deg;
+  animation: orbit-path 7s linear infinite;
 }
 .loop-controls { display: flex; flex-direction: column; justify-content: center; }
 .loop-step {
@@ -1003,9 +1006,8 @@ footer {
 footer p { margin: 0; color: var(--muted); }
 
 a:focus-visible, button:focus-visible { outline: 3px solid var(--teal); outline-offset: 4px; }
-@keyframes orbit {
-  from { transform: rotate(0deg) translateX(12px) rotate(0deg); }
-  to { transform: rotate(360deg) translateX(12px) rotate(-360deg); }
+@keyframes orbit-path {
+  to { offset-distance: 100%; }
 }
 
 @media (max-width: 900px) {
@@ -1108,7 +1110,6 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--teal); outline-
   .ring-two { width: 250px; height: 250px; }
   .orbit-core { width: 100px; height: 100px; border-radius: 25px; }
   .orbit-core span { font-size: 66px; }
-  .orbit-pulse { top: calc(50% - 75px); left: calc(50% + 140px); }
   .loop-detail { grid-template-columns: 1fr; }
   .loop-detail p { grid-column: 1; }
   .decision-spec { grid-template-columns: 1fr; }
