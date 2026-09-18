@@ -149,6 +149,28 @@ main { overflow: hidden; }
 .home-hero-art figcaption span:nth-child(2) { text-align: center; }
 .home-hero-art figcaption span:last-child { text-align: right; color: var(--teal-deep); }
 
+.home-intro {
+  padding: clamp(90px, 10vw, 145px) max(28px, calc((100vw - 1280px) / 2));
+  display: grid;
+  grid-template-columns: 1.08fr .92fr;
+  gap: clamp(55px, 9vw, 135px);
+  align-items: start;
+  border-top: 1px solid var(--ink);
+}
+.home-intro-heading h2 {
+  max-width: 790px;
+  margin: 0;
+  font-size: clamp(50px, 6vw, 90px);
+}
+.home-intro-copy {
+  max-width: 650px;
+  padding-top: 39px;
+  border-top: 1px solid var(--ink);
+}
+.home-intro-copy p { font-size: 19px; }
+.home-intro-copy p + p { margin-top: 28px; color: var(--muted); }
+.home-intro-copy .text-link { margin-top: 24px; }
+
 .insights-index {
   padding: clamp(90px, 10vw, 150px) max(28px, calc((100vw - 1280px) / 2));
   border-top: 1px solid var(--ink);
@@ -1166,7 +1188,9 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--teal); outline-
   .home-hero-art { margin: 28px 18px 0; }
   .home-hero-art img { min-height: 0; aspect-ratio: 16 / 9; border-radius: 80px 80px 8px 80px; }
   .home-hero-art::before { border-radius: 80px 80px 8px 80px; }
-  .index-heading, .featured-insight, .forthcoming, .home-ecosystem, .home-careers { grid-template-columns: 1fr; }
+  .index-heading, .featured-insight, .forthcoming, .home-ecosystem, .home-careers, .home-intro { grid-template-columns: 1fr; }
+  .home-intro { gap: 42px; }
+  .home-intro-copy { max-width: 760px; padding-top: 26px; }
   .index-heading { gap: 24px; }
   .featured-art { min-height: 420px; }
   .featured-copy { min-height: 500px; }
@@ -1249,6 +1273,10 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--teal); outline-
   .home-hero-art { margin-left: 8px; margin-right: 0; }
   .home-hero-art img { aspect-ratio: .95 / 1; object-position: 66% center; border-radius: 72px 72px 8px 72px; }
   .home-hero-art::before { inset: -10px 10px 12px -10px; border-radius: 72px 72px 8px 72px; }
+  .home-intro { padding: 82px 18px; gap: 34px; }
+  .home-intro-heading h2 { font-size: clamp(46px, 13.5vw, 65px); }
+  .home-intro-copy { padding-top: 22px; }
+  .home-intro-copy p { font-size: 17px; }
   .insights-index { padding: 82px 18px; }
   .index-heading { margin-bottom: 46px; }
   .featured-art { min-height: 310px; }
