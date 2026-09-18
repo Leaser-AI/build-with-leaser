@@ -25,3 +25,9 @@ controls.forEach((control) => {
 
 const year = document.querySelector('#year');
 if (year) year.textContent = new Date().getFullYear();
+
+const applicationRole = document.querySelector('#application-role');
+if (applicationRole) {
+  const role = new URLSearchParams(window.location.search).get('role');
+  if (role) applicationRole.textContent = role;
+}
