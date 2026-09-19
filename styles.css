@@ -1163,6 +1163,112 @@ h3 { font-size: clamp(26px, 3vw, 42px); }
 .semantic-memory > p:last-child { max-width: 720px; margin: 50px 0 0 auto; font-size: 20px; }
 .semantic-close { background: var(--teal); }
 
+/* Field note 005 — demand as an allocatable asset, not a volume target. */
+.allocation-hero { grid-template-columns: minmax(0, .88fr) minmax(500px, 1.12fr); }
+.allocation-hero h1 { font-size: clamp(54px, 6.4vw, 106px); }
+.allocation-hero-art img {
+  aspect-ratio: 1.28 / 1;
+  object-position: 55% center;
+  border-radius: 8px 110px 8px 110px;
+}
+.allocation-thesis {
+  padding: clamp(90px, 11vw, 165px) max(28px, calc((100vw - 1180px) / 2));
+  background: var(--teal);
+}
+.allocation-thesis p { margin: 0; font-size: 14px; font-weight: 650; }
+.allocation-thesis p:last-child { margin-left: 54%; }
+.allocation-thesis blockquote {
+  max-width: 1100px;
+  margin: 30px 0 34px;
+  font-family: var(--display);
+  font-size: clamp(58px, 8.5vw, 126px);
+  font-weight: 760;
+  letter-spacing: -.06em;
+  line-height: .88;
+}
+.portfolio-blindspot {
+  padding: clamp(90px, 10vw, 145px) max(28px, calc((100vw - 1280px) / 2));
+  background: var(--teal-pale);
+}
+.portfolio-blindspot > header { display: grid; grid-template-columns: .62fr 1.38fr; gap: 48px; }
+.portfolio-blindspot h2 { max-width: 930px; }
+.pressure-board { display: grid; grid-template-columns: repeat(4, 1fr); margin-top: 70px; border: 1px solid var(--ink); }
+.pressure-board article { min-height: 340px; display: flex; flex-direction: column; padding: 22px; border-right: 1px solid var(--ink); }
+.pressure-board article:last-child { border-right: 0; }
+.pressure-board article > span { color: var(--muted); font-size: 12px; }
+.pressure-board strong { margin-top: 100px; font-family: var(--display); font-size: clamp(25px, 2.8vw, 38px); letter-spacing: -.04em; line-height: 1; }
+.pressure-board p { font-size: 14px; }
+.pressure-board b { margin-top: auto; padding-top: 14px; border-top: 1px solid rgba(7,10,10,.45); color: var(--teal-deep); font-size: 13px; }
+.pressure-board .pressure-high { background: var(--ink); color: var(--white); }
+.pressure-board .pressure-high > span, .pressure-board .pressure-high p { color: #aebbb8; }
+.pressure-board .pressure-high b { color: var(--teal); border-color: #43504e; }
+.marginal-value {
+  padding: clamp(95px, 11vw, 160px) max(28px, calc((100vw - 1280px) / 2));
+  background: var(--ink);
+  color: var(--white);
+}
+.marginal-value > div:first-child { display: grid; grid-template-columns: .65fr 1.35fr; gap: 48px; }
+.marginal-value .section-kicker { color: var(--teal); }
+.marginal-value h2 { max-width: 920px; }
+.value-equation { display: grid; grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr; margin-top: 70px; border: 1px solid #4a5956; }
+.value-equation > div { min-height: 230px; display: flex; flex-direction: column; justify-content: space-between; padding: 20px; }
+.value-equation > i { display: grid; place-items: center; color: var(--teal); font-family: var(--display); font-size: 28px; font-style: normal; }
+.value-equation span { color: #9caaa7; font-size: 12px; }
+.value-equation strong { font-family: var(--display); font-size: clamp(22px, 2.2vw, 32px); letter-spacing: -.04em; line-height: 1.05; }
+.value-equation .value-result { background: var(--teal); color: var(--ink); }
+.value-equation .value-result span { color: var(--ink); }
+.marginal-value > p { max-width: 700px; margin: 50px 0 0 auto; color: #b8c3c1; font-size: 18px; }
+.channel-roles { padding: clamp(95px, 11vw, 160px) max(28px, calc((100vw - 1280px) / 2)); }
+.channel-roles > header { display: grid; grid-template-columns: .65fr 1.35fr; gap: 48px; }
+.channel-roles h2 { max-width: 920px; }
+.channel-roles > div { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 70px; border-top: 2px solid var(--ink); }
+.channel-roles article { min-height: 360px; padding: 22px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--ink); }
+.channel-roles article:last-child { border-right: 0; }
+.channel-roles article > span { color: var(--teal-deep); font-size: 13px; font-weight: 700; }
+.channel-roles h3 { margin-top: 92px; }
+.channel-roles article p { color: var(--muted); }
+.allocation-loop {
+  padding: clamp(95px, 11vw, 160px) max(28px, calc((100vw - 1280px) / 2));
+  background: var(--teal);
+}
+.allocation-loop > header { display: grid; grid-template-columns: .62fr 1.38fr; gap: 48px; }
+.allocation-loop h2 { max-width: 950px; }
+.allocation-loop ol { margin: 72px 0 0; padding: 0; border-top: 2px solid var(--ink); list-style: none; }
+.allocation-loop li { display: grid; grid-template-columns: 70px .72fr 1.28fr; gap: 30px; align-items: baseline; padding: 22px 0; border-bottom: 1px solid rgba(7,10,10,.55); }
+.allocation-loop li > span { font-family: var(--display); font-weight: 750; }
+.allocation-loop li > strong { font-family: var(--display); font-size: clamp(24px, 3vw, 41px); letter-spacing: -.04em; }
+.allocation-loop li > p { margin: 0; max-width: 600px; }
+.decision-receipt {
+  margin: clamp(70px, 8vw, 120px) max(28px, calc((100vw - 1180px) / 2));
+  padding: clamp(50px, 7vw, 90px);
+  border: 2px solid var(--ink);
+  box-shadow: 16px 16px 0 var(--teal);
+}
+.decision-receipt > div { display: grid; grid-template-columns: .6fr 1.4fr; gap: 40px; }
+.decision-receipt h2 { max-width: 850px; }
+.decision-receipt dl { margin: 60px 0 0; border-top: 1px solid var(--ink); }
+.decision-receipt dl > div { display: grid; grid-template-columns: 180px 1fr; gap: 24px; padding: 17px 0; border-bottom: 1px solid var(--line); }
+.decision-receipt dt { color: var(--teal-deep); font-size: 13px; font-weight: 700; }
+.decision-receipt dd { margin: 0; }
+.allocation-ecosystem {
+  padding: clamp(95px, 11vw, 160px) max(28px, calc((100vw - 1280px) / 2));
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  gap: clamp(60px, 9vw, 130px);
+  background: var(--teal-pale);
+}
+.allocation-ecosystem > div:last-child { align-self: end; }
+.allocation-ecosystem > div:last-child p { font-size: 20px; }
+.allocation-memory {
+  padding: clamp(105px, 13vw, 190px) max(28px, calc((100vw - 1120px) / 2));
+  background: var(--ink);
+  color: var(--white);
+}
+.allocation-memory > p:first-child { color: var(--teal); font-family: var(--display); font-size: clamp(24px, 3vw, 40px); font-weight: 700; letter-spacing: -.04em; }
+.allocation-memory h2 { max-width: 1080px; font-size: clamp(62px, 9vw, 132px); }
+.allocation-memory > p:last-child { max-width: 720px; margin: 55px 0 0 auto; color: #bcc7c5; font-size: 20px; }
+.allocation-close { background: var(--paper); }
+
 footer {
   margin: 0 28px;
   padding: 24px 0 38px;
@@ -1420,6 +1526,57 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--teal); outline-
 @media (max-width: 440px) {
   .header-cta { display: none; }
   .site-header { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 900px) {
+  .portfolio-blindspot > header,
+  .marginal-value > div:first-child,
+  .channel-roles > header,
+  .allocation-loop > header,
+  .decision-receipt > div,
+  .allocation-ecosystem { grid-template-columns: 1fr; }
+  .allocation-hero-art { margin-top: 34px; }
+  .allocation-hero-art img { aspect-ratio: 16 / 9; }
+  .pressure-board { grid-template-columns: repeat(2, 1fr); }
+  .pressure-board article:nth-child(2) { border-right: 0; }
+  .pressure-board article:nth-child(-n+2) { border-bottom: 1px solid var(--ink); }
+  .value-equation { grid-template-columns: 1fr; }
+  .value-equation > div { min-height: 170px; }
+  .value-equation > i { min-height: 48px; transform: rotate(90deg); }
+  .allocation-loop li { grid-template-columns: 60px .8fr 1.2fr; }
+}
+
+@media (max-width: 560px) {
+  .allocation-hero h1 { font-size: clamp(47px, 13.2vw, 65px); }
+  .allocation-hero-art img { aspect-ratio: 1 / 1; object-position: 54% center; border-radius: 5px 68px 5px 68px; }
+  .allocation-thesis,
+  .portfolio-blindspot,
+  .marginal-value,
+  .channel-roles,
+  .allocation-loop,
+  .allocation-ecosystem,
+  .allocation-memory { padding-left: 18px; padding-right: 18px; }
+  .allocation-thesis p:last-child { margin-left: 0; }
+  .allocation-thesis blockquote { font-size: clamp(54px, 15vw, 76px); }
+  .portfolio-blindspot > header,
+  .marginal-value > div:first-child,
+  .channel-roles > header,
+  .allocation-loop > header { gap: 14px; }
+  .pressure-board { grid-template-columns: 1fr; }
+  .pressure-board article, .pressure-board article:nth-child(2) { min-height: 250px; border-right: 0; border-bottom: 1px solid var(--ink); }
+  .pressure-board article:last-child { border-bottom: 0; }
+  .pressure-board strong { margin-top: 58px; }
+  .value-equation { margin-top: 48px; }
+  .channel-roles > div { grid-template-columns: 1fr; }
+  .channel-roles article { min-height: 280px; border-right: 0; }
+  .channel-roles h3 { margin-top: 58px; }
+  .allocation-loop li { grid-template-columns: 42px 1fr; gap: 12px; }
+  .allocation-loop li > p { grid-column: 2; }
+  .decision-receipt { margin-left: 18px; margin-right: 18px; padding: 42px 18px; box-shadow: 8px 8px 0 var(--teal); }
+  .decision-receipt > div { gap: 10px; }
+  .decision-receipt dl > div { grid-template-columns: 1fr; gap: 5px; }
+  .allocation-ecosystem { gap: 38px; }
+  .allocation-memory h2 { font-size: clamp(50px, 13.5vw, 70px); }
 }
 
 @media (prefers-reduced-motion: reduce) {
